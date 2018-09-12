@@ -19,7 +19,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../mgen-android/app/src/main/res/drawable-hdpi/picto_mgen_section.png" />
+                                      <entry key="imageAsset" value="C:\Users\dchikhaoui\Desktop\velo.png" />
+                                      <entry key="outputName" value="ic_velo" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -46,7 +47,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../../mgen-android/app/src/main/res/drawable-hdpi/picto_mgen_section.png" />
+                                      <entry key="foregroundImage" value="C:\Users\dchikhaoui\Desktop\velo.png" />
                                       <entry key="foregroundLayerName" value="ic_launcher_foreground" />
                                       <entry key="outputName" value="maker_picto" />
                                     </map>
@@ -98,12 +99,17 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../../mgen-android/app/src/main/res/drawable-hdpi/picto_marker_unauthenticated.png" />
+                                      <entry key="imageAsset" value="C:\Users\dchikhaoui\Downloads\mgen-android\app\src\main\res\drawable-hdpi\picto_marker_unauthenticated.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>
