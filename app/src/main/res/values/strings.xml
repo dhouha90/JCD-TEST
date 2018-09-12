@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JCDecaux </string>
+    <string name="title_activity_maps">Stations</string>
+    <string name="title_activity_detaill">Station détaille </string>
+    <string name="move_camera">Il faut cliquer pour changer votre adresse </string>
+    <string name="marker_title">Vous </string>
+    <string name="station_available">Nombre de borne libre :  %1$s</string>
+    <string name="bike_available">Nombre de vélo libre :  %1$s</string>
+    <string name="tryAgain_button">Ressayer</string>
+</resources>

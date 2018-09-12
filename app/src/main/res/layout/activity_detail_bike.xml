@@ -1,0 +1,78 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bike"
+            type="com.example.dchikhaoui.monmap.Model.Bike" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"></fragment>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="10dp"
+
+            android:src="@drawable/picto_marker"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map"
+            android:layout_marginTop="@dimen/margin_maps"/>
+
+        <TextView
+            android:id="@+id/bike_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bike.name}"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/redColor"
+            app:layout_constraintLeft_toRightOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/map" />
+
+        <TextView
+            android:id="@+id/bike_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bike.address}"
+            android:maxLines="4"
+            app:layout_constraintLeft_toRightOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/bike_name" />
+
+        <TextView
+            android:id="@+id/bike_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bike.status}"
+            app:layout_constraintLeft_toRightOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/bike_address" />
+
+        <TextView
+            android:id="@+id/bike_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/station_available(bike.available_bike_stands)}"
+            app:layout_constraintLeft_toRightOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/bike_status" />
+
+
+        <TextView
+            android:id="@+id/station_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/bike_available(bike.available_bikes)}"
+            app:layout_constraintLeft_toRightOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/bike_available" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
